@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@keyframes movebg {
+    0% {background-position: 0px center; }
+    100% {background-position: -200px center; }
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    background: url('./nightsky.jpg') 0 center / 100% repeat-x;
+    animation: movebg 30s linear infinite;
+    background-size: cover;
+    font-family: 'Abel', sans-serif;
+}
+
+div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+table {
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    width: 5%;
+    height: 50px;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.rubric {
+    padding-bottom: 0px;
+}
+
+button {
+    border-color: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: Transparent;
+    font-family: 'Abel', sans-serif;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.score {
+    color: white;
+    font-size: 30px;
+}
+
+.second {
+    font-size: 50px;
+}
