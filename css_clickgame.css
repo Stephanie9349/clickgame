@@ -38,6 +38,10 @@ td {
     text-align: center;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 .container {
     text-align: center;
 }

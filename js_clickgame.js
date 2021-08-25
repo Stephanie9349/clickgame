@@ -1,6 +1,8 @@
 const button = document.querySelector('button');
 const second = document.querySelector('.second');
 const sec = document.querySelector('#s');
+let score = document.querySelector('.score span');
+
 let timeout = 60;
 const planets = {
     num1: 'sun.png',
@@ -32,6 +34,39 @@ function startCount() {
         let td = tr.querySelectorAll('td')[column];
         let img = document.createElement('img');
         img.src = planets['num' + planet];
+        img.classList.add('num'+ planet);
+        img.addEventListener('click', getScore);
+        function getScore(event) {
+            img.removeEventListener('click', getScore);
+            if(event.target.classList.contains("num1")) {
+                score.textContent = Number(score.textContent) + 1;
+                return;
+            }
+            if(event.target.classList.contains("num2")) {
+                score.textContent = Number(score.textContent) + 5;
+                return;
+            }
+            if(event.target.classList.contains("num3")) {
+                score.textContent = Number(score.textContent) + 10;
+                return;
+            }
+            if(event.target.classList.contains("num4")) {
+                score.textContent = Number(score.textContent) + 15;
+                return;
+            }
+            if(event.target.classList.contains("num5")) {
+                score.textContent = Number(score.textContent) + 20;
+                return;
+            }
+            if(event.target.classList.contains("num6")) {
+                score.textContent = Number(score.textContent) + 25;
+                return;
+            }
+            if(event.target.classList.contains("num7")) {
+                score.textContent = Number(score.textContent) - 30;
+                return;
+            }
+        }
         td.appendChild(img);
         setTimeout(() => {
             td.removeChild(img);
