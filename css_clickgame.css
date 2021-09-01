@@ -6,8 +6,9 @@
 }
 
 html {
+    background-attachment: fixed;
     width: 100%;
-    min-height: 100%;
+    min-height: 125%;
     height: auto;
     margin: 0;
     background: url('./nightsky.jpg') 0 center / 100% repeat-x;
@@ -17,10 +18,45 @@ html {
 }
 
 div {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     color: white;
+}
+
+img.num1 {
+    width: 95px;
+    height: 95px;
+}
+
+img.num2 {
+    width: 85px;
+    height: 85px;
+}
+
+img.num3 {
+    width: 75px;
+    height: 75px;
+}
+
+img.num4 {
+    width: 65px;
+    height: 65px;
+}
+
+img.num5 {
+    width: 55px;
+    height: 55px;
+}
+
+img.num6 {
+    width: 35px;
+    height: 35px;
+}
+
+img.num7 {
+    width: 45px;
+    height: 45px;
 }
 
 table {
@@ -34,7 +70,7 @@ td {
     /* border: 1px solid white; */
     border-collapse: collapse;
     width: 5%;
-    height: 50px;
+    height: 100px;
     text-align: center;
 }
 
@@ -47,10 +83,11 @@ img:hover {
 }
 
 .rubric {
-    padding-bottom: 0px;
+    padding: 0px;
 }
 
 button {
+    position: sticky;
     border-color: white;
     border-radius: 50px;
     width: 150px;
@@ -69,9 +106,23 @@ button:hover {
 
 .score {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .second {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+.others {
+    text-align: right;
+    margin: 0px;   
+    padding: 0px;
+}
+
+.others span {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
 }
