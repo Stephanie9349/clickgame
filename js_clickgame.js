@@ -52,8 +52,8 @@ function startCount() {
         let row = Math.floor(Math.random() * 7);
         let column = Math.floor(Math.random() * 10);
         let planet = Math.floor(Math.random() * 7 + 1);
-        let tr = document.querySelectorAll('tr')[row];
-        let td = tr.querySelectorAll('td')[column];
+        let tr = document.querySelectorAll('.row')[row];
+        let item = tr.querySelectorAll('.item')[column];
         let img = document.createElement('img');
         img.src = planets['num' + planet];
         img.classList.add('num'+ planet);
@@ -89,9 +89,9 @@ function startCount() {
                 return;
             }
         }
-        td.appendChild(img);
+        item.appendChild(img);
         setTimeout(() => {
-            td.removeChild(img);
+            item.removeChild(img);
         }, 2000);
     }, (Math.ceil((Math.random() * max + 0.9) * 100) / 100) * 1000);
 
